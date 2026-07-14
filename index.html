@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Indrajit Dutta — Software Engineering Student, Full Stack Developer, and Problem Solver at Narula Institute of Technology. Building robust web applications and seeking software engineering internships." />
+  <meta name="keywords" content="Indrajit Dutta, Full Stack Developer, Software Engineering, Portfolio, JavaScript, Python, Java, React, Web Developer India" />
+  <meta name="author" content="Indrajit Dutta" />
+  <meta property="og:title" content="Indrajit Dutta — Full Stack Developer" />
+  <meta property="og:description" content="Software Engineering Student at Narula Institute of Technology. Full Stack Developer. Problem Solver." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://indrajitdutta.dev" />
+  <meta property="og:image" content="assets/profile.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Indrajit Dutta — Full Stack Developer" />
+  <meta name="twitter:description" content="Software Engineering Student. Full Stack Developer. Problem Solver." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <title>Indrajit Dutta — Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-logo">ID</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header id="navbar" role="banner">
+    <nav class="nav-container" aria-label="Primary navigation">
+      <a href="#hero" class="nav-logo" aria-label="Indrajit Dutta home">
+        <span class="logo-text">Indrajit<span class="logo-accent">.</span></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-sm nav-cta">Hire Me</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="nav-mobile" id="navMobile" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section id="hero" aria-label="Hero introduction">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="hero-badge reveal">
+          <span class="badge-dot" aria-hidden="true"></span>
+          Available for internships &amp; collaborations
+        </div>
+        <h1 class="hero-title reveal">
+          Building software<br />
+          that <span class="gradient-text" id="typingTarget"></span>
+        </h1>
+        <p class="hero-sub reveal">
+          Software Engineering Student at Narula Institute of Technology.<br />
+          Full Stack Developer. Competitive Programmer. Problem Solver.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#resume" class="btn btn-primary">View Resume</a>
+          <a href="https://github.com/IndrajitDutta420" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            GitHub
+          </a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-div" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-num">Top 1%</span>
+            <span class="stat-label">NPTEL DBMS</span>
+          </div>
+          <div class="stat-div" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-num">4+</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-hint reveal" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-label reveal">About Me</div>
+        <div class="about-grid">
+          <div class="about-text">
+            <h2 id="about-heading" class="section-title reveal">
+              Crafting code with<br /><span class="gradient-text">precision &amp; purpose</span>
+            </h2>
+            <p class="about-body reveal">
+              I'm Indrajit Dutta, a B.Tech Electronics &amp; Communication Engineering student at Narula Institute of Technology, Kolkata. My passion sits at the intersection of software engineering and real-world problem solving — I build full-stack web applications, explore data structures, and push myself through competitive programming challenges.
+            </p>
+            <p class="about-body reveal">
+              With certifications from NVIDIA and IIT Madras (NPTEL Topper 1%), and hands-on experience from Smart India Hackathon and the Proxie Studio internship, I'm constantly shipping, learning, and leveling up. My goal: land a software engineering internship where I can contribute meaningfully from day one.
+            </p>
+            <div class="about-links reveal">
+              <a href="https://github.com/IndrajitDutta420" target="_blank" rel="noopener noreferrer" class="link-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/indrajit-dutta-427202373" target="_blank" rel="noopener noreferrer" class="link-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+              <a href="mailto:indrajitduttaforeducation@gmail.com" class="link-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Email
+              </a>
+            </div>
+          </div>
+          <div class="about-card-stack reveal">
+            <div class="profile-card glass-card">
+              <div class="profile-avatar">
+                <img src="assets/profile.svg" alt="Indrajit Dutta profile photo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;" onerror="this.style.display='none';this.parentElement.classList.add('avatar-fallback')" />
+                <div class="avatar-initials" aria-hidden="true">ID</div>
+              </div>
+              <div class="profile-info">
+                <div class="profile-name">Indrajit Dutta</div>
+                <div class="profile-title">Full Stack Developer</div>
+                <div class="profile-location">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  Kolkata, India
+                </div>
+              </div>
+              <div class="profile-badges">
+                <span class="chip chip-green">Open to Work</span>
+                <span class="chip chip-cyan">B.Tech ECE</span>
+              </div>
+            </div>
+            <div class="mini-card glass-card reveal-delay-1">
+              <span class="mini-icon">🏆</span>
+              <div>
+                <div class="mini-title">NPTEL Topper 1%</div>
+                <div class="mini-sub">IIT Madras · DBMS</div>
+              </div>
+            </div>
+            <div class="mini-card glass-card reveal-delay-2">
+              <span class="mini-icon">🤖</span>
+              <div>
+                <div class="mini-title">NVIDIA Certified</div>
+                <div class="mini-sub">AI Fundamentals</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-label reveal">Technical Skills</div>
+        <h2 id="skills-heading" class="section-title reveal">What I build with</h2>
+        <p class="section-sub reveal">A breadth of technologies — from systems-level C to full-stack web — with a focus on clean, maintainable code.</p>
+
+        <div class="skills-categories">
+          <div class="skill-cat reveal">
+            <div class="skill-cat-label">Languages</div>
+            <div class="skills-grid">
+              <div class="skill-card glass-card">
+                <div class="skill-icon sk-html" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
+                </div>
+                <span>HTML</span>
+              </div>
+              <div class="skill-card glass-card">
+                <div class="skill-icon sk-css" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.003-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
+                </div>
+                <span>CSS</span>
+              </div>
+              <div class="skill-card glass-card">
+                <div class="skill-icon sk-js" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+                </div>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-card glass-card">
+                <div class="skill-icon sk-c" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M20.795 14.291a8.249 8.249 0 0 1-7.878 5.834C8.338 20.125 4.5 16.285 4.5 11.5S8.338 2.875 12.917 2.875a8.249 8.249 0 0 1 7.899 5.887l2.684-.772A11 11 0 0 0 12.917.125C7.095.125 1.75 5.192 1.75 11.5S7.095 22.875 12.917 22.875a11 11 0 0 0 10.555-7.832z"/></svg>
+                </div>
+                <span>C</span>
+              </div>
+              <div class="skill-card glass-card">
+                <div class="skill-icon sk-java" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149zm-.575-2.627s-1.028.761.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218zm4.84-4.458c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0-.001-8.216 2.051-4.292 6.573zM19.33 20.504s.679.559-.747.991c-2.712.822-11.288 1.069-13.669.033-.856-.373.75-.89 1.254-.998.527-.114.828-.093.828-.093-.953-.671-6.156 1.317-2.643 1.887 9.58 1.553 17.462-.7 14.977-1.82zm-9.038-6.294s-4.362 1.036-1.544 1.412c1.189.159 3.561.123 5.77-.062 1.806-.152 3.618-.477 3.618-.477s-.637.272-1.098.587c-4.429 1.165-12.986.623-10.522-.568 2.082-1.006 3.776-.892 3.776-.892zm7.824 4.374c4.503-2.34 2.421-4.589.968-4.285-.355.074-.515.138-.515.138s.132-.207.385-.297c2.875-1.011 5.086 2.981-.928 4.562 0-.001.07-.062.09-.118zm-5.716-14.209s2.494 2.494-2.365 6.33c-3.896 3.077-.888 4.832-.001 6.836-2.274-2.053-3.943-3.858-2.824-5.542 1.644-2.469 6.197-3.665 5.19-7.624zm-4.667 17.029c4.322.277 10.959-.153 11.116-2.198 0 0-.302.775-3.572 1.391-3.688.694-8.239.613-10.937.168 0-.001.553.457 3.393.639z"/></svg>
+                </div>
+                <span>Java</span>
+              </div>
+              <div class="skill-card glass-card">
+                <div class="skill-icon sk-python" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.914 0C5.82 0 6.2 2.656 6.2 2.656l.007 2.752h5.814v.826H3.9S0 5.789 0 11.969c0 6.18 3.403 5.963 3.403 5.963h2.031v-2.869s-.109-3.403 3.343-3.403h5.761s3.233.052 3.233-3.124V3.124S18.28 0 11.914 0zm-3.21 1.804a1.044 1.044 0 1 1 0 2.088 1.044 1.044 0 0 1 0-2.088zm-.001 0M12.087 24c6.093 0 5.713-2.656 5.713-2.656l-.007-2.752H12.98v-.826h8.12S24 18.21 24 12.031c0-6.18-3.403-5.963-3.403-5.963h-2.031v2.869s.109 3.403-3.343 3.403H9.462S6.229 12.288 6.229 15.464v5.412S5.72 24 12.087 24zm3.21-1.804a1.044 1.044 0 1 1 0-2.088 1.044 1.044 0 0 1 0 2.088z"/></svg>
+                </div>
+                <span>Python</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-cat reveal">
+            <div class="skill-cat-label">Core Concepts</div>
+            <div class="skills-grid">
+              <div class="skill-card glass-card">
+                <div class="skill-icon sk-dsa" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/></svg>
+                </div>
+                <span>DSA</span>
+              </div>
+              <div class="skill-card glass-card">
+                <div class="skill-icon sk-sql" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                </div>
+                <span>SQL</span>
+              </div>
+              <div class="skill-card glass-card">
+                <div class="skill-icon sk-android" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.341c-.503 0-.912.41-.912.913s.409.913.912.913.913-.41.913-.913-.41-.913-.913-.913zm-11.046 0c-.503 0-.912.41-.912.913s.409.913.912.913.913-.41.913-.913-.41-.913-.913-.913zm11.39-7.306l1.633-2.833c.097-.168.038-.381-.13-.478-.168-.098-.38-.039-.478.13l-1.654 2.867A9.88 9.88 0 0012 7.125c-1.64 0-3.19.39-4.568 1.076L5.778 5.334c-.097-.169-.31-.228-.478-.13-.168.097-.227.31-.13.478l1.633 2.833C4.136 9.63 2.456 12.103 2.456 15h19.088c0-2.897-1.68-5.37-3.677-6.965z"/></svg>
+                </div>
+                <span>Android Dev</span>
+              </div>
+              <div class="skill-card glass-card">
+                <div class="skill-icon sk-git" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.606-.405-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/></svg>
+                </div>
+                <span>Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" aria-labelledby="education-heading">
+      <div class="container">
+        <div class="section-label reveal">Education</div>
+        <h2 id="education-heading" class="section-title reveal">Academic journey</h2>
+        <div class="timeline">
+          <div class="timeline-line" aria-hidden="true"></div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card glass-card">
+              <div class="tl-header">
+                <div class="tl-title">B.Tech — Electronics &amp; Communication Engineering</div>
+                <div class="tl-period chip chip-green">2024 — 2028</div>
+              </div>
+              <div class="tl-institution">Narula Institute of Technology, Kolkata</div>
+              <p class="tl-desc">Building a strong foundation in embedded systems, digital electronics, and computer science fundamentals. Pursuing software engineering as a parallel specialization through self-learning and project work.</p>
+              <div class="tl-tags">
+                <span class="chip">DSA</span>
+                <span class="chip">Full Stack</span>
+                <span class="chip">Problem Solving</span>
+                <span class="chip">Android Dev</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS & CERTIFICATIONS -->
+    <section id="achievements" aria-labelledby="achievements-heading">
+      <div class="container">
+        <div class="section-label reveal">Achievements &amp; Certifications</div>
+        <h2 id="achievements-heading" class="section-title reveal">Recognition &amp; credentials</h2>
+        <p class="section-sub reveal">Validated expertise from leading institutions and industry players.</p>
+
+        <div class="ach-grid">
+          <div class="ach-card glass-card reveal">
+            <div class="ach-icon" aria-hidden="true">🏆</div>
+            <div class="ach-body">
+              <div class="ach-title">NPTEL DBMS — Topper 1%</div>
+              <div class="ach-issuer">IIT Madras · National Programme on Technology Enhanced Learning</div>
+              <p class="ach-desc">Ranked in the Topper 1% nationally among thousands of students in the Database Management Systems course conducted by IIT Madras.</p>
+            </div>
+            <span class="chip chip-green">Achievement</span>
+          </div>
+
+          <div class="ach-card glass-card reveal">
+            <div class="ach-icon" aria-hidden="true">📱</div>
+            <div class="ach-body">
+              <div class="ach-title">Mobile App Development for Android</div>
+              <div class="ach-issuer">Industry Certification</div>
+              <p class="ach-desc">Completed Android mobile application development, building real-world apps using industry-standard tools and best practices.</p>
+            </div>
+            <span class="chip chip-cyan">Achievement</span>
+          </div>
+
+          <div class="ach-card glass-card reveal">
+            <div class="ach-icon" aria-hidden="true">🤖</div>
+            <div class="ach-body">
+              <div class="ach-title">NVIDIA AI Certificate</div>
+              <div class="ach-issuer">NVIDIA Deep Learning Institute</div>
+              <p class="ach-desc">Earned an AI fundamentals certification from NVIDIA, covering deep learning concepts, neural networks, and GPU-accelerated computing.</p>
+            </div>
+            <span class="chip chip-green">Certification</span>
+          </div>
+
+          <div class="ach-card glass-card reveal">
+            <div class="ach-icon" aria-hidden="true">🗄️</div>
+            <div class="ach-body">
+              <div class="ach-title">NPTEL DBMS Certificate</div>
+              <div class="ach-issuer">IIT Madras · NPTEL</div>
+              <p class="ach-desc">Formal certification in Database Management Systems from IIT Madras, demonstrating proficiency in SQL, relational models, and database design.</p>
+            </div>
+            <span class="chip chip-cyan">Certification</span>
+          </div>
+
+          <div class="ach-card glass-card reveal">
+            <div class="ach-icon" aria-hidden="true">💼</div>
+            <div class="ach-body">
+              <div class="ach-title">Proxie Studio Internship</div>
+              <div class="ach-issuer">Proxie Studio</div>
+              <p class="ach-desc">Completed a professional internship at Proxie Studio, gaining real-world industry experience in software development and professional workflows.</p>
+            </div>
+            <span class="chip chip-green">Internship</span>
+          </div>
+
+          <div class="ach-card glass-card reveal">
+            <div class="ach-icon" aria-hidden="true">💡</div>
+            <div class="ach-body">
+              <div class="ach-title">Smart India Hackathon</div>
+              <div class="ach-issuer">Government of India</div>
+              <p class="ach-desc">Participated in Smart India Hackathon, a national-level competition organized by the Government of India to solve real-world civic and national challenges through technology.</p>
+            </div>
+            <span class="chip chip-cyan">Certificate</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GITHUB -->
+    <section id="github" aria-labelledby="github-heading">
+      <div class="container">
+        <div class="section-label reveal">GitHub</div>
+        <h2 id="github-heading" class="section-title reveal">Open source &amp; projects</h2>
+        <p class="section-sub reveal">Building publicly. Every commit tells a story.</p>
+        <div class="github-cta glass-card reveal">
+          <div class="github-cta-left">
+            <div class="github-avatar" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            </div>
+            <div>
+              <div class="github-handle">@IndrajitDutta420</div>
+              <div class="github-sub">github.com/IndrajitDutta420</div>
+            </div>
+          </div>
+          <a href="https://github.com/IndrajitDutta420" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            View Profile
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" aria-labelledby="resume-heading">
+      <div class="container">
+        <div class="section-label reveal">Resume</div>
+        <h2 id="resume-heading" class="section-title reveal">Curriculum Vitae</h2>
+
+        <div class="resume-layout">
+          <!-- CV PREVIEW -->
+          <div class="cv-preview glass-card reveal">
+            <div class="cv-header">
+              <div class="cv-name">Indrajit Dutta</div>
+              <div class="cv-title-text">Software Engineering Student · Full Stack Developer</div>
+              <div class="cv-contacts">
+                <span>indrajitduttaforeducation@gmail.com</span>
+                <span>github.com/IndrajitDutta420</span>
+                <span>linkedin.com/in/indrajit-dutta-427202373</span>
+                <span>Kolkata, India</span>
+              </div>
+            </div>
+            <div class="cv-section">
+              <div class="cv-section-title">Career Objective</div>
+              <p class="cv-text">Motivated Electronics &amp; Communication Engineering student seeking a Software Engineering Internship to apply my full-stack development skills, DSA knowledge, and passion for building impactful software in a professional environment.</p>
+            </div>
+            <div class="cv-section">
+              <div class="cv-section-title">Education</div>
+              <div class="cv-item">
+                <div class="cv-item-title">B.Tech — Electronics &amp; Communication Engineering</div>
+                <div class="cv-item-sub">Narula Institute of Technology, Kolkata · 2024–2028</div>
+              </div>
+            </div>
+            <div class="cv-section">
+              <div class="cv-section-title">Skills</div>
+              <div class="cv-skills-row">
+                <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
+                <span class="chip">C</span><span class="chip">Java</span><span class="chip">Python</span>
+                <span class="chip">SQL</span><span class="chip">DSA</span><span class="chip">Android</span>
+              </div>
+            </div>
+            <div class="cv-section">
+              <div class="cv-section-title">Achievements</div>
+              <div class="cv-item"><div class="cv-item-title">NPTEL DBMS — Topper 1% · IIT Madras</div></div>
+              <div class="cv-item"><div class="cv-item-title">Mobile App Development for Android</div></div>
+            </div>
+            <div class="cv-section">
+              <div class="cv-section-title">Certifications</div>
+              <div class="cv-item"><div class="cv-item-title">NVIDIA AI Certificate</div></div>
+              <div class="cv-item"><div class="cv-item-title">NPTEL DBMS Certificate · IIT Madras</div></div>
+              <div class="cv-item"><div class="cv-item-title">Proxie Studio Internship Certificate</div></div>
+              <div class="cv-item"><div class="cv-item-title">Smart India Hackathon Certificate(s)</div></div>
+            </div>
+          </div>
+
+          <!-- DOWNLOAD PANEL -->
+          <div class="resume-download reveal">
+            <div class="download-card glass-card">
+              <div class="download-icon" aria-hidden="true">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+              </div>
+              <div class="download-title">Download CV</div>
+              <div class="download-sub">PDF · One Page · ATS Friendly</div>
+              <a href="./assets/CV.pdf"
+download="Indrajit_Dutta_CV.pdf"
+class="btn btn-primary">
+    Download CV
+</a>
+              <div class="download-divider" aria-hidden="true"></div>
+              <div class="download-quick">
+                <a href="mailto:indrajitduttaforeducation@gmail.com" class="quick-link">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  Email me directly
+                </a>
+                <a href="https://www.linkedin.com/in/indrajit-dutta-427202373" target="_blank" rel="noopener noreferrer" class="quick-link">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                  Connect on LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-label reveal">Contact</div>
+        <h2 id="contact-heading" class="section-title reveal">Let's build something<br /><span class="gradient-text">remarkable together</span></h2>
+        <p class="section-sub reveal">Open to software engineering internships, full-stack roles, and hackathon collaborations. Let's connect.</p>
+        <div class="contact-grid">
+          <a href="mailto:indrajitduttaforeducation@gmail.com" class="contact-card glass-card reveal" aria-label="Send email to Indrajit Dutta">
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value">indrajitduttaforeducation@gmail.com</div>
+          </a>
+          <a href="https://github.com/IndrajitDutta420" target="_blank" rel="noopener noreferrer" class="contact-card glass-card reveal" aria-label="Visit Indrajit's GitHub profile">
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            </div>
+            <div class="contact-label">GitHub</div>
+            <div class="contact-value">@IndrajitDutta420</div>
+          </a>
+          <a href="https://www.linkedin.com/in/indrajit-dutta-427202373" target="_blank" rel="noopener noreferrer" class="contact-card glass-card reveal" aria-label="Visit Indrajit's LinkedIn profile">
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-value">indrajit-dutta-427202373</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">Indrajit<span class="logo-accent">.</span></span>
+        <span class="footer-sub">Software Engineering Student · Full Stack Developer</span>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-copy">
+        © 2024 Indrajit Dutta. Crafted with precision.
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="backToTop" aria-label="Back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
